@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app-container">
+      <header className="header">
+        <NavigationBar />
       </header>
+      <section className='main_content'>
+        <div className='main_heading'>
+          <h1><center>Customized<br/>skincare,<br/>down to a<br/>science.</center></h1>
+        </div>
+        <div className='main_img'>
+          <img className='hero' src='https://picsum.photos/200/300' alt='hero'></img>
+          <span className='hero_mask'></span>
+        </div>
+      </section>
+      <footer className='footer'>This is the footer.</footer>
     </div>
   );
 }
