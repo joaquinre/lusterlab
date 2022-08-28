@@ -4,8 +4,13 @@ import "./NavigationBar.css";
 
 const NavigationBar = () => (
     <nav className="nabvar">
+        <Hamburger />
         <div className="spacer" />
-        <h1 className="logo">lusterlab</h1>
+        <h1> 
+            <a className="logo" href="/">
+                lusterlab
+            </a>
+        </h1>
     </nav>
 )
 
