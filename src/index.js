@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import LandingPage from './components/LandingPage';
-import Treatments from './components/Treatments';
+import LandingPage from './components/landingPage/LandingPage';
+import TreatmentsPage1 from './components/treatmentsPages/Page_1/treatmentPage1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <LandingPage />
-    <Treatments />
+    <TreatmentsPage1 />
   </React.StrictMode>
 );
 
